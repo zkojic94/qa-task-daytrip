@@ -1,0 +1,22 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@gmail.com",
+  "fromLocation": "Vienna",
+  "toLocation": "Altaussee",
+  "birthDay": "10",
+  "birthMonth": "March",
+  "birthYear": "1994",
+  "pickUpAddress": "Rembrandtstraße 21, 1020 Wien, Austria",
+  "dropOffAddress": "Altaussee, Austria",
+  "phone": "13413433333",
+  "tripSummaryTitle": "Trip summary",
+  "checkoutTitle": "Complete your booking",
+  "bookingConfirmedTitle": "Your booking is confirmed!",
+  "tripPrice": "€378",
+  "vehicleType": "Sedan",
+  "tripConfiguratorUrl": "/configurator",
+  "bookingUrl": "/booking",
+  "checkoutUrl": "/checkout",
+  "bookingConfirmationUrl": "/booking-confirmation"
+}
