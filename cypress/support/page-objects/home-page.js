@@ -1,5 +1,6 @@
 export default class HomePage {
-	// locators
+    
+    // Locators
     departureDatePicker(){
         return cy.get('[data-cy="departureDate"]');
     }
@@ -16,10 +17,9 @@ export default class HomePage {
         return cy.get('[data-cy="book-button"]');
     }
 
-    // methods
+    // Methods
     selectDepartureDate(){
-        this.departureDatePicker().first().click();
-        cy.wait(500);
+        this.departureDatePicker().first().click().wait(500);
         this.datePickerArrow().click();
         this.datePickerValue().click();
     }

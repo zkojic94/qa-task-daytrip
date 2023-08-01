@@ -1,5 +1,6 @@
 export default class SharedObjects {
-	// locators
+	
+    // Locators
     fromLocationInput(){
         return cy.get('[data-cy="fromSelect"]');
     }
@@ -8,16 +9,14 @@ export default class SharedObjects {
         return cy.get('[data-cy="toSelect"]');
     }
 
-    // methods
+    // Methods
     selectFromLocation(fromLocation){
-        this.fromLocationInput().first().type(fromLocation);
-        cy.wait(1000);
+        this.fromLocationInput().first().type(fromLocation).wait(1000);
         this.fromLocationInput().first().type('{downarrow}{enter}');
     }
 
     selectToLocation(toLocation){
-        this.toLocationInput().first().type(toLocation);
-        cy.wait(1000);
+        this.toLocationInput().first().type(toLocation).wait(1000);
         this.toLocationInput().first().type('{downarrow}{enter}');
     }
 

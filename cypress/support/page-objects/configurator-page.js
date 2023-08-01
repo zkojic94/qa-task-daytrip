@@ -1,5 +1,6 @@
 export default class ConfiguratorPage {
-	// locators
+    
+    // Locators
     bookTripButton(){
         return cy.get('[data-cy="bookTrip"]');
     }
@@ -8,7 +9,7 @@ export default class ConfiguratorPage {
         return cy.get('[data-cy="confirm"]');
     }
 
-    // methods
+    // Methods
     bookYourTrip(price){
         this.bookTripButton().last().contains(`Book your trip for ${price}`);
         this.bookTripButton().last().click();

@@ -1,5 +1,6 @@
 export default class CheckoutPage {
-	// locators
+    
+    // Locators
     firstNameInput(){
         return cy.get('#adult_0_firstName');
     }
@@ -32,15 +33,11 @@ export default class CheckoutPage {
         return cy.get('#drop-off-address');
     }
 
-    confirmPaymentButton(){
-        return cy.get('[data-cy="confirmPayment"]');
-    }
-
     summaryTotalPriceTitle(){
         return cy.get('[data-cy="summaryTotalPrice"] > span');
     }
     
-    // methods
+    // Methods
     addPassengerFirstName(firstName){
         this.firstNameInput().type(firstName);
     }
@@ -73,8 +70,7 @@ export default class CheckoutPage {
 
     selectPaymentOption(paymentOption, price){
         cy.contains(paymentOption).click();
-        this.confirmPaymentButton().contains(`Confirm your booking for ${price}`);
-        this.confirmPaymentButton().click();
+        cy.contains(`Confirm your booking for ${price}`).click();
     }
 
     verifyTripSummaryTitle(title){

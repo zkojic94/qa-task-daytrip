@@ -1,5 +1,6 @@
 export default class BookingPage {
-	// locators
+    
+    // Locators
     contactEmailInput(){
         return cy.get('#lead-passenger-email');
     }
@@ -8,7 +9,7 @@ export default class BookingPage {
         return cy.get('[data-cy="saveAndContinue"]');
     }
     
-    // methods
+    // Methods
     submitContactEmail(email){
         this.contactEmailInput().type(email);
         this.saveButton().click();
